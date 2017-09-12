@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4hj-ay-Xig">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation Controller-->
+        <scene sceneID="8Sn-0x-uaA">
+            <objects>
+                <navigationController id="4hj-ay-Xig" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ewe-Pr-ki5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2Rd-6T-U52" kind="relationship" relationship="rootViewController" id="KET-LD-RRD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHZ-91-gSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1159" y="143"/>
+        </scene>
+        <!--Statistic View Controller-->
+        <scene sceneID="Tc8-wE-mad">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rS9-Ix-shr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="2Rd-6T-U52" customClass="StatisticViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fbI-GK-tdl"/>
+                        <viewControllerLayoutGuide type="bottom" id="qBL-qO-D8d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A4h-jB-tGS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NEI-x9-zKb"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-94" y="175"/>
+        </scene>
+    </scenes>
+</document>

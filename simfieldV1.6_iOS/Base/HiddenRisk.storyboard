@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GY7-iC-PR0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation Controller-->
+        <scene sceneID="uGj-sr-lkK">
+            <objects>
+                <navigationController id="GY7-iC-PR0" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h13-mP-y40">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zfi-9N-ofW" kind="relationship" relationship="rootViewController" id="ryD-Qr-rNV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4H1-Py-wq3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314" y="141"/>
+        </scene>
+        <!--Hidden View Controller-->
+        <scene sceneID="uPT-gr-G9r">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zY7-aa-nRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="zfi-9N-ofW" customClass="HiddenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yc3-Db-xQr"/>
+                        <viewControllerLayoutGuide type="bottom" id="5lU-md-Y37"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DRn-PG-fMA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0Ww-A6-ZGS"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="641" y="129"/>
+        </scene>
+    </scenes>
+</document>

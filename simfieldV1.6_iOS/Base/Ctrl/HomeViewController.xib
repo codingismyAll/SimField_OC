@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="flowImage" destination="prb-L9-2zg" id="k15-7e-Qw3"/>
+                <outlet property="insImage" destination="p0w-7n-Ql6" id="RVV-Z7-KSz"/>
+                <outlet property="supImage" destination="70O-Op-zl3" id="3gr-2P-Uuh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main_Icon_Flow.png" translatesAutoresizingMaskIntoConstraints="NO" id="prb-L9-2zg">
+                    <rect key="frame" x="15" y="200" width="105" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="Mdn-yG-FBh"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main_Icon_Alarm.png" translatesAutoresizingMaskIntoConstraints="NO" id="70O-Op-zl3">
+                    <rect key="frame" x="135" y="200" width="105" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="zZg-AE-g7w"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Main_Icon_Report.png" translatesAutoresizingMaskIntoConstraints="NO" id="p0w-7n-Ql6">
+                    <rect key="frame" x="255" y="200" width="105" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="125" id="zvC-o8-dnB"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="流程监视" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQM-Sx-0ME">
+                    <rect key="frame" x="32" y="339" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Uef-gH-Yxt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="流程管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guR-gh-Lkg">
+                    <rect key="frame" x="152" y="339" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="uaa-EA-fzU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="巡检管理" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aim-62-dIp">
+                    <rect key="frame" x="272" y="339" width="70" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="WED-8M-APy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kW1-OR-HF5">
+                    <rect key="frame" x="15" y="550" width="345" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.10358381011234163" blue="0.16588641294580109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="jIr-qz-ct3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="注   销">
+                        <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="logout:" destination="-1" eventType="touchUpInside" id="NvX-IQ-cXe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="70O-Op-zl3" firstAttribute="leading" secondItem="prb-L9-2zg" secondAttribute="trailing" constant="15" id="3Za-Lh-P29"/>
+                <constraint firstItem="p0w-7n-Ql6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="AVh-LB-nog"/>
+                <constraint firstItem="guR-gh-Lkg" firstAttribute="top" secondItem="70O-Op-zl3" secondAttribute="bottom" constant="14" id="AVq-UB-8j9"/>
+                <constraint firstAttribute="bottom" secondItem="kW1-OR-HF5" secondAttribute="bottom" constant="67" id="I98-WL-lQd"/>
+                <constraint firstItem="prb-L9-2zg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="KsG-Kb-sqz"/>
+                <constraint firstItem="aim-62-dIp" firstAttribute="top" secondItem="p0w-7n-Ql6" secondAttribute="bottom" constant="14" id="RPS-bj-ovV"/>
+                <constraint firstItem="tQM-Sx-0ME" firstAttribute="centerX" secondItem="prb-L9-2zg" secondAttribute="centerX" id="Tr6-pq-5NJ"/>
+                <constraint firstItem="p0w-7n-Ql6" firstAttribute="width" secondItem="prb-L9-2zg" secondAttribute="width" id="Xfk-vU-DGn"/>
+                <constraint firstItem="aim-62-dIp" firstAttribute="centerX" secondItem="p0w-7n-Ql6" secondAttribute="centerX" id="ZZr-06-d3d"/>
+                <constraint firstItem="kW1-OR-HF5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="c9t-Fo-y7u"/>
+                <constraint firstItem="70O-Op-zl3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="clb-iq-QeZ"/>
+                <constraint firstAttribute="trailing" secondItem="p0w-7n-Ql6" secondAttribute="trailing" constant="15" id="d0s-gk-XZe"/>
+                <constraint firstAttribute="trailing" secondItem="kW1-OR-HF5" secondAttribute="trailing" constant="15" id="fhW-po-2cQ"/>
+                <constraint firstItem="guR-gh-Lkg" firstAttribute="centerX" secondItem="70O-Op-zl3" secondAttribute="centerX" id="hDa-8Y-Ich"/>
+                <constraint firstItem="p0w-7n-Ql6" firstAttribute="leading" secondItem="70O-Op-zl3" secondAttribute="trailing" constant="15" id="lmf-4T-lFB"/>
+                <constraint firstItem="70O-Op-zl3" firstAttribute="width" secondItem="prb-L9-2zg" secondAttribute="width" id="o02-bb-nXL"/>
+                <constraint firstItem="prb-L9-2zg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="rgS-Bl-cam"/>
+                <constraint firstItem="tQM-Sx-0ME" firstAttribute="top" secondItem="prb-L9-2zg" secondAttribute="bottom" constant="14" id="tof-IZ-eSk"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-167" y="-350"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Main_Icon_Alarm.png" width="180" height="180"/>
+        <image name="Main_Icon_Flow.png" width="180" height="180"/>
+        <image name="Main_Icon_Report.png" width="180" height="180"/>
+    </resources>
+</document>
